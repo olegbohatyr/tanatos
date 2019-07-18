@@ -13,6 +13,9 @@ $(function(){
     		1200:{
     			items:4,
     		},
+    		990:{
+    			items:3,
+    		},
     		768:{
     			items:2,
     		},
@@ -30,5 +33,8 @@ $(function(){
 		$('.menu__hidden').fadeToggle(300);
 	});
 	
-	
+	$('.btn__bottom').on('click', function(){
+		var top = $('.services').offset().top;
+		$("html, body").animate({ scrollTop:  top});
+	});
 })
